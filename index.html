@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trip In - Your Journey Starts Here</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav>
+<div class="logo">🌍 TRIP IN</div>
+
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#destinations">Destinations</a></li>
+<li><a href="#packages">Packages</a></li>
+<li><a href="#calculator">Calculator</a></li>
+<li><a href="#booking">Booking</a></li>
+</ul>
+</nav>
+
+<!-- HERO SECTION -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>Explore Beautiful Places Near Hyderabad</h1>
+
+<p>
+Affordable Packages • Comfortable Stay • Amazing Memories
+</p>
+
+<a href="#destinations">
+<button>Explore Now</button>
+</a>
+
+</div>
+
+</section>
+
+<!-- WHY CHOOSE US -->
+
+<section class="why">
+
+<h2>Why Choose Trip In?</h2>
+
+<div class="features">
+
+<div class="feature">
+🚗
+<h3>Comfort Travel</h3>
+<p>Safe and comfortable transportation.</p>
+</div>
+
+<div class="feature">
+🏨
+<h3>Quality Hotels</h3>
+<p>Clean and affordable stays.</p>
+</div>
+
+<div class="feature">
+🍴
+<h3>Food Included</h3>
+<p>Delicious meals throughout the trip.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- DESTINATIONS -->
+
+<section id="destinations">
+
+<h2>Popular Destinations</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="images/ramoji.jpg">
+<h3>Ramoji Film City</h3>
+<p>35 km from Hyderabad</p>
+<p>Starting ₹3000</p>
+</div>
+
+<div class="card">
+<img src="images/ananthagiri.jpg">
+<h3>Ananthagiri Hills</h3>
+<p>80 km from Hyderabad</p>
+<p>Starting ₹3000</p>
+</div>
+
+<div class="card">
+<img src="images/nagarjuna.jpg">
+<h3>Nagarjuna Sagar</h3>
+<p>165 km from Hyderabad</p>
+<p>Starting ₹6000</p>
+</div>
+
+<div class="card">
+<img src="images/warangal.jpg">
+<h3>Warangal Fort</h3>
+<p>150 km from Hyderabad</p>
+<p>Starting ₹6000</p>
+</div>
+
+<div class="card">
+<img src="images/srisailam.jpg">
+<h3>Srisailam</h3>
+<p>215 km from Hyderabad</p>
+<p>Starting ₹9000</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- PACKAGES -->
+
+<section id="packages">
+
+<h2>Travel Packages</h2>
+
+<div class="package-container">
+
+<div class="package">
+<h3>🌟 Quick Escape</h3>
+<h2>1 Day / 1 Night</h2>
+<p>Travel + Hotel + Food</p>
+<h1>₹3000</h1>
+</div>
+
+<div class="package">
+<h3>🌟 Weekend Explorer</h3>
+<h2>2 Days / 2 Nights</h2>
+<p>Travel + Hotel + Food + Activities</p>
+<h1>₹6000</h1>
+</div>
+
+<div class="package">
+<h3>🌟 Premium Adventure</h3>
+<h2>3 Days / 3 Nights</h2>
+<p>Travel + Hotel + Food + Guide</p>
+<h1>₹9000</h1>
+</div>
+
+</div>
+
+</section>
+
+<!-- CALCULATOR -->
+
+<section id="calculator">
+
+<h2>Trip Cost Calculator</h2>
+
+<select id="packageCost">
+<option value="3000">1 Day / 1 Night</option>
+<option value="6000">2 Days / 2 Nights</option>
+<option value="9000">3 Days / 3 Nights</option>
+</select>
+
+<br><br>
+
+<input type="number" id="people" placeholder="Number of Travelers">
+
+<br><br>
+
+<button onclick="calculateCost()">Calculate</button>
+
+<h2 id="result"></h2>
+
+</section>
+
+<!-- REVIEWS -->
+
+<section class="reviews">
+
+<h2>Traveler Reviews</h2>
+
+<div class="review-box">
+⭐⭐⭐⭐⭐
+<p>Amazing trip and affordable packages!</p>
+<h4>- Rahul</h4>
+</div>
+
+<div class="review-box">
+⭐⭐⭐⭐⭐
+<p>Best travel experience with family.</p>
+<h4>- Priya</h4>
+</div>
+
+</section>
+
+<!-- BOOKING -->
+
+<section id="booking">
+
+<h2>Book Your Trip</h2>
+
+<input type="text" placeholder="Full Name">
+
+<input type="email" placeholder="Email">
+
+<input type="text" placeholder="Phone Number">
+
+<button onclick="bookTrip()">Book Now</button>
+
+</section>
+
+<footer>
+<p>© 2026 TRIP IN | Travel With Happiness</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
