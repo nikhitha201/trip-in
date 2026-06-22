@@ -104,9 +104,52 @@ entryFee:"₹60",
 duration:"4 Hours",
 food:"Zoo Cafeteria",
 hotel:"Hotel Haridwar"
-}
+},
 
-];
+{
+name:"Lumbini Park",
+bestTime:"5 PM - 8 PM",
+season:"October - February",
+entryFee:"₹20",
+duration:"2 Hours",
+food:"Eat Street",
+hotel:"Hotel Annapurna",
+image:"images/lumbini.jpg"
+},
+
+{
+name:"Shilparamam",
+bestTime:"4 PM - 8 PM",
+season:"All Seasons",
+entryFee:"₹60",
+duration:"3 Hours",
+food:"Local Food Court",
+hotel:"Minerva Grand",
+image:"images/shilparamam.jpg"
+},
+
+{
+name:"Laad Bazaar",
+bestTime:"5 PM - 9 PM",
+season:"All Seasons",
+entryFee:"Free",
+duration:"2 Hours",
+food:"Shadab Restaurant",
+hotel:"Hotel Marjaan",
+image:"images/laadbazaar.jpg"
+},
+
+{
+name:"Tank Bund",
+bestTime:"6 PM - 9 PM",
+season:"October - March",
+entryFee:"Free",
+duration:"2 Hours",
+food:"Eat Street",
+hotel:"Hotel Imperial",
+image:"images/tankbund.jpg"
+}
+ ];
 const hotels = {
 
 budget:[
