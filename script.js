@@ -297,3 +297,16 @@ evening:"Departure"
 }
 
 ];
+function getBudgetType(amount){
+
+if(amount <= 5000){
+return "budget";
+}
+
+if(amount <= 10000){
+return "standard";
+}
+
+return "premium";
+
+}
