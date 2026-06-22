@@ -107,3 +107,27 @@ hotel:"Hotel Haridwar"
 }
 
 ];
+const hotels = {
+
+budget:[
+"Hotel Annapurna",
+"Hotel Vaishnavi",
+"Hotel Haridwar",
+"Hotel Nayaab"
+],
+
+standard:[
+"Minerva Grand",
+"Hotel Imperial",
+"Hotel Central Park",
+"The Golkonda"
+],
+
+premium:[
+"Taj Krishna",
+"ITC Kakatiya",
+"Hyatt Hyderabad",
+"Marriott Hyderabad"
+]
+
+};
