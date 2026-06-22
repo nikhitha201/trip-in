@@ -718,3 +718,17 @@ document.body.classList.toggle(
 );
 
 });
+budgetSlider.addEventListener("input",()=>{
+
+budgetValue.innerText =
+"₹" + budgetSlider.value;
+
+document
+.getElementById("costEstimate")
+.innerText =
+
+"Estimated Trip Cost: ₹"
++
+budgetSlider.value;
+
+});
