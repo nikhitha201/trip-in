@@ -1,27 +1,26 @@
-function calculateCost(){
+const startBtn =
+document.getElementById("startBtn");
 
-let packageCost =
-document.getElementById("packageCost").value;
+const planner =
+document.getElementById("planner");
 
-let people =
-document.getElementById("people").value;
+startBtn.addEventListener("click",()=>{
 
-if(people==""){
-alert("Enter number of travelers");
-return;
-}
+planner.scrollIntoView({
+behavior:"smooth"
+});
 
-let total = packageCost * people;
+});
 
-document.getElementById("result").innerHTML =
-"Total Cost = ₹" + total;
+const budgetSlider =
+document.getElementById("budgetSlider");
 
-}
+const budgetValue =
+document.getElementById("budgetValue");
 
-function bookTrip(){
+budgetSlider.addEventListener("input",()=>{
 
-alert(
-"Thank you for choosing TRIP IN! Your booking request has been submitted."
-);
+budgetValue.innerText =
+"₹" + budgetSlider.value;
 
-}
+});
