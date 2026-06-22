@@ -131,3 +131,26 @@ premium:[
 ]
 
 };
+const foods = [
+
+"Hyderabadi Biryani",
+
+"Haleem",
+
+"Double Ka Meetha",
+
+"Qubani Ka Meetha",
+
+"Irani Chai",
+
+"Osmania Biscuit",
+
+"Pathar Ka Gosht",
+
+"Chicken 65",
+
+"Kebabs",
+
+"Mutton Biryani"
+
+];
