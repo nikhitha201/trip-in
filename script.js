@@ -189,3 +189,52 @@ evening:"Departure"
 }
 
 ];
+const itinerary3 = [
+
+{
+day:"Day 1",
+
+morning:"Charminar",
+
+breakfast:"Irani Chai",
+
+afternoon:"Chowmahalla Palace",
+
+lunch:"Paradise",
+
+evening:"Hussain Sagar",
+
+dinner:"Shah Ghouse"
+},
+
+{
+day:"Day 2",
+
+morning:"Ramoji Film City",
+
+breakfast:"Hotel Breakfast",
+
+afternoon:"Film City Tour",
+
+lunch:"Food Court",
+
+evening:"Shows & Activities",
+
+dinner:"Restaurant"
+},
+
+{
+day:"Day 3",
+
+morning:"Golconda Fort",
+
+breakfast:"Cafe Niloufer",
+
+afternoon:"Salar Jung Museum",
+
+lunch:"Bawarchi",
+
+evening:"Shopping & Departure"
+}
+
+];
