@@ -453,3 +453,54 @@ line-height:2;
 
 box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
+#contact{
+
+padding:80px 10%;
+
+text-align:center;
+}
+
+#contact h2{
+
+color:#ff8c69;
+
+margin-bottom:30px;
+}
+
+#contact form{
+
+max-width:700px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:15px;
+}
+
+#contact input,
+#contact textarea{
+
+padding:15px;
+
+border:1px solid #ddd;
+
+border-radius:10px;
+}
+
+#contact button{
+
+padding:15px;
+
+background:#ff8c69;
+
+border:none;
+
+border-radius:10px;
+
+color:white;
+
+cursor:pointer;
+}
