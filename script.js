@@ -154,3 +154,38 @@ const foods = [
 "Mutton Biryani"
 
 ];
+const itinerary2 = [
+
+{
+day:"Day 1",
+
+morning:"Charminar",
+
+breakfast:"Irani Chai & Osmania Biscuit",
+
+afternoon:"Chowmahalla Palace",
+
+lunch:"Paradise Biryani",
+
+evening:"Hussain Sagar",
+
+dinner:"Shah Ghouse",
+
+stay:"Hotel"
+},
+
+{
+day:"Day 2",
+
+morning:"Golconda Fort",
+
+breakfast:"Cafe Niloufer",
+
+afternoon:"Shopping At Laad Bazaar",
+
+lunch:"Bawarchi",
+
+evening:"Departure"
+}
+
+];
