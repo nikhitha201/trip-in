@@ -732,3 +732,25 @@ document
 budgetSlider.value;
 
 });
+function saveFavorite(place){
+
+let favorites =
+
+JSON.parse(
+localStorage.getItem("favorites")
+)
+
+|| [];
+
+favorites.push(place);
+
+localStorage.setItem(
+"favorites",
+JSON.stringify(favorites)
+);
+
+alert(
+place + " saved!"
+);
+
+}
