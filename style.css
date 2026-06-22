@@ -504,3 +504,20 @@ color:white;
 
 cursor:pointer;
 }
+.dark-mode{
+
+background:#1e1e1e;
+
+color:white;
+}
+
+.dark-mode .card,
+.dark-mode .planner-card,
+.dark-mode .place-card,
+.dark-mode .summary-card,
+.dark-mode .itinerary-card{
+
+background:#2c2c2c;
+
+color:white;
+}
