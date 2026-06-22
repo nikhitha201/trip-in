@@ -78,6 +78,7 @@ entryFee:"Free",
 duration:"1 Hour",
 food:"Minerva Coffee Shop",
 hotel:"Hotel Imperial"
+image:"images/birla mandir.jpg"
 },
 
 {
@@ -88,6 +89,7 @@ entryFee:"₹50",
 duration:"3 Hours",
 food:"Cafe Niloufer",
 hotel:"Hotel Central Park"
+ image:"images/salarjung museum.jpg"
 },
 
 {
@@ -119,6 +121,7 @@ duration:"2 Hours",
 food:"Eat Street",
 hotel:"Hotel Annapurna",
 image:"images/lumbini.jpg"
+ 
 },
 
 {
@@ -140,7 +143,7 @@ entryFee:"Free",
 duration:"2 Hours",
 food:"Shadab Restaurant",
 hotel:"Hotel Marjaan",
-image:"images/laadbazaar.jpg"
+image:"images/laad bazar.jpg"
 },
 
 {
@@ -151,7 +154,7 @@ entryFee:"Free",
 duration:"2 Hours",
 food:"Eat Street",
 hotel:"Hotel Imperial",
-image:"images/tankbund.jpg"
+image:"images/tank bund.jpg"
 }
  ];
 const hotels = {
