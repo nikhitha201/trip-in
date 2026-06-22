@@ -10,104 +10,158 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#0f172a;
-color:white;
+background:#fff7f2;
+overflow-x:hidden;
 }
 
-nav{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 8%;
-background:#08111f;
-position:sticky;
-top:0;
-z-index:1000;
-}
-
-nav ul{
-display:flex;
-list-style:none;
-gap:25px;
-}
-
-nav a{
-color:white;
-text-decoration:none;
-}
-
-.logo{
-font-size:28px;
-font-weight:bold;
-}
+/* HERO */
 
 .hero{
 height:100vh;
-background:url('images/hero.jpg');
+background:url('../images/hero.jpg');
 background-size:cover;
 background-position:center;
+position:relative;
+}
+
+.overlay{
+height:100%;
+background:rgba(0,0,0,.45);
+
 display:flex;
 justify-content:center;
 align-items:center;
-text-align:center;
 }
 
 .hero-content{
-background:rgba(0,0,0,.5);
-padding:40px;
-border-radius:20px;
+text-align:center;
+color:white;
+padding:20px;
 }
 
-.hero h1{
-font-size:60px;
+.hero-content h1{
+font-size:80px;
+letter-spacing:5px;
 margin-bottom:20px;
 }
 
-.hero button{
-padding:15px 30px;
+.hero-content p{
+font-size:24px;
+margin-bottom:30px;
+}
+
+.hero-content button{
+padding:15px 40px;
 border:none;
-background:#ff6b35;
-color:white;
+border-radius:10px;
 font-size:18px;
-border-radius:30px;
 cursor:pointer;
-}
-
-section{
-padding:80px 8%;
-}
-
-h2{
-text-align:center;
-margin-bottom:40px;
-}
-
-.features,
-.cards,
-.package-container{
-display:flex;
-flex-wrap:wrap;
-gap:25px;
-justify-content:center;
-}
-
-.feature,
-.card,
-.package,
-.review-box{
-background:white;
-color:black;
-padding:20px;
-border-radius:20px;
-width:300px;
-text-align:center;
+background:#ffb38a;
+color:white;
 transition:.4s;
 }
 
-.card:hover,
-.package:hover,
-.feature:hover,
-.review-box:hover{
+.hero-content button:hover{
+transform:scale(1.08);
+}
+
+/* PLANNER */
+
+#planner{
+padding:80px 10%;
+text-align:center;
+}
+
+#planner h2{
+font-size:40px;
+color:#ff8c69;
+margin-bottom:15px;
+}
+
+.planner-subtitle{
+margin-bottom:40px;
+}
+
+.planner-card{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+max-width:700px;
+margin:auto;
+}
+
+#searchInput,
+#duration{
+width:100%;
+padding:15px;
+margin-bottom:20px;
+border:1px solid #ddd;
+border-radius:10px;
+font-size:16px;
+}
+
+.budget-box{
+margin-bottom:30px;
+}
+
+#budgetSlider{
+width:100%;
+margin-top:10px;
+}
+
+#budgetValue{
+font-size:22px;
+font-weight:600;
+margin-top:10px;
+color:#ff8c69;
+}
+
+#generateBtn{
+padding:15px 40px;
+background:#ff8c69;
+border:none;
+border-radius:10px;
+color:white;
+cursor:pointer;
+font-size:18px;
+transition:.4s;
+}
+
+#generateBtn:hover{
+transform:translateY(-3px);
+}
+
+/* HIGHLIGHTS */
+
+.highlights{
+padding:80px 10%;
+text-align:center;
+}
+
+.highlights h2{
+font-size:40px;
+margin-bottom:40px;
+color:#ff8c69;
+}
+
+.cards{
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 10px 20px rgba(0,0,0,.1);
+transition:.4s;
+}
+
+.card:hover{
 transform:translateY(-10px);
 }
 
@@ -115,70 +169,55 @@ transform:translateY(-10px);
 width:100%;
 height:200px;
 object-fit:cover;
-border-radius:15px;
 }
 
-.package h1{
-color:#ff6b35;
-margin-top:15px;
+.card h3{
+margin:15px;
 }
 
-#calculator{
+.card p{
+padding:0 15px 20px;
+}
+
+/* RESULT */
+
+#resultSection{
+padding:80px 10%;
 text-align:center;
 }
 
-select,
-input{
-padding:12px;
-width:280px;
-border:none;
-border-radius:10px;
-margin:10px;
+#resultSection h2{
+font-size:40px;
+margin-bottom:30px;
+color:#ff8c69;
 }
 
-button{
-padding:12px 30px;
-background:#ff6b35;
-border:none;
-color:white;
-border-radius:30px;
-cursor:pointer;
+#results{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.1);
 }
 
-button:hover{
-transform:scale(1.05);
-}
-
-.reviews{
-text-align:center;
-}
-
-footer{
-background:#08111f;
-text-align:center;
-padding:25px;
-}
+/* MOBILE */
 
 @media(max-width:768px){
 
-.hero h1{
-font-size:35px;
+.hero-content h1{
+font-size:50px;
 }
 
-nav{
-flex-direction:column;
+.hero-content p{
+font-size:18px;
 }
 
-nav ul{
-flex-wrap:wrap;
-justify-content:center;
+#planner h2,
+.highlights h2,
+#resultSection h2{
+font-size:30px;
 }
 
-.card,
-.package,
-.feature,
-.review-box{
-width:90%;
+.planner-card{
+padding:25px;
 }
-
 }
