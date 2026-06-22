@@ -371,3 +371,51 @@ margin-bottom:10px;
 font-size:17px;
 
 }
+#travelTips{
+
+padding:80px 10%;
+
+text-align:center;
+
+}
+
+#travelTips h2{
+
+font-size:40px;
+
+margin-bottom:40px;
+
+color:#ff8c69;
+
+}
+
+.tips-container{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:25px;
+
+}
+
+.tip{
+
+background:white;
+
+padding:25px;
+
+border-radius:20px;
+
+box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+transition:.4s;
+
+}
+
+.tip:hover{
+
+transform:translateY(-10px);
+
+}
