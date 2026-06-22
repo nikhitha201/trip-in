@@ -315,3 +315,227 @@ document.getElementById("generateBtn");
 
 const results =
 document.getElementById("results");
+function getRandomHotel(type){
+
+const hotelList = hotels[type];
+
+const randomIndex =
+Math.floor(Math.random() * hotelList.length);
+
+return hotelList[randomIndex];
+
+}
+function getRandomFoods(){
+
+let selectedFoods = [];
+
+for(let i=0;i<3;i++){
+
+const randomFood =
+foods[
+Math.floor(Math.random()*foods.length)
+];
+
+selectedFoods.push(randomFood);
+
+}
+
+return selectedFoods;
+
+}
+function getPlaceInfo(placeName){
+
+return places.find(
+place => place.name === placeName
+);
+
+}
+function generateItinerary(duration){
+
+if(duration === "2"){
+return itinerary2;
+}
+
+if(duration === "3"){
+return itinerary3;
+}
+
+if(duration === "4"){
+return itinerary4;
+}
+
+return [];
+
+}
+generateBtn.addEventListener("click",()=>{
+
+const duration =
+document.getElementById("duration").value;
+
+const budget =
+parseInt(
+document.getElementById("budgetSlider").value
+);
+
+if(duration === ""){
+
+alert(
+"Please select trip duration."
+);
+
+return;
+
+}
+
+const budgetType =
+getBudgetType(budget);
+
+const hotel =
+getRandomHotel(budgetType);
+
+const recommendedFoods =
+getRandomFoods();
+
+const tripPlan =
+generateItinerary(duration);
+
+displayResults(
+tripPlan,
+hotel,
+recommendedFoods,
+budgetType,
+budget
+);
+
+});
+function displayResults(
+tripPlan,
+hotel,
+recommendedFoods,
+budgetType,
+budget
+){
+
+results.innerHTML = "";
+
+results.innerHTML += `
+
+<div class="summary-card">
+
+<h2>
+Trip Summary
+</h2>
+
+<p>
+Budget:
+₹${budget}
+</p>
+
+<p>
+Category:
+${budgetType.toUpperCase()}
+</p>
+
+<p>
+Recommended Hotel:
+${hotel}
+</p>
+
+<p>
+Must Try Foods:
+${recommendedFoods.join(", ")}
+</p>
+
+</div>
+
+`;
+
+tripPlan.forEach(day=>{
+
+let placeInfo =
+getPlaceInfo(day.morning);
+
+results.innerHTML += `
+
+<div class="itinerary-card">
+
+<h2>
+${day.day}
+</h2>
+
+<p>
+🌅 Morning:
+${day.morning}
+</p>
+
+<p>
+🍳 Breakfast:
+${day.breakfast}
+</p>
+
+<p>
+🏛 Afternoon:
+${day.afternoon}
+</p>
+
+<p>
+🍽 Lunch:
+${day.lunch}
+</p>
+
+<p>
+🌇 Evening:
+${day.evening}
+</p>
+
+${
+day.dinner
+?
+`<p>🍴 Dinner: ${day.dinner}</p>`
+:
+""
+}
+
+${
+placeInfo
+?
+`
+
+<hr>
+
+<h4>
+Place Details
+</h4>
+
+<p>
+Best Time:
+${placeInfo.bestTime}
+</p>
+
+<p>
+Season:
+${placeInfo.season}
+</p>
+
+<p>
+Entry Fee:
+${placeInfo.entryFee}
+</p>
+
+<p>
+Duration:
+${placeInfo.duration}
+</p>
+
+`
+:
+""
+}
+
+</div>
+
+`;
+
+});
+
+}
