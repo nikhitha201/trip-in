@@ -34,6 +34,7 @@ entryFee:"₹25",
 duration:"2 Hours",
 food:"Shadab Restaurant",
 hotel:"Hotel Marjaan"
+image:"images/charminar.jpg"
 },
 
 {
@@ -44,6 +45,7 @@ entryFee:"₹25",
 duration:"3 Hours",
 food:"Paradise Biryani",
 hotel:"Hotel Deccan Serai"
+image:"images/golconda.jpg"
 },
 
 {
@@ -54,6 +56,7 @@ entryFee:"₹1350",
 duration:"Full Day",
 food:"Ramoji Food Court",
 hotel:"Sitara Luxury Hotel"
+image:"images/ramoji.jpg"
 },
 
 {
@@ -64,6 +67,7 @@ entryFee:"Free",
 duration:"2 Hours",
 food:"Eat Street",
 hotel:"Hotel Annapurna"
+image:"images/hussain sagar.jpg"
 },
 
 {
