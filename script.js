@@ -310,3 +310,8 @@ return "standard";
 return "premium";
 
 }
+const generateBtn =
+document.getElementById("generateBtn");
+
+const results =
+document.getElementById("results");
