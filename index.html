@@ -5,12 +5,11 @@
 
 <meta charset="UTF-8">
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Trip-In | Hyderabad Travel Planner</title>
 
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="style.css">
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
@@ -19,9 +18,6 @@ content="width=device-width, initial-scale=1.0">
 <body>
 
 <!-- HERO SECTION -->
-<button id="darkModeBtn">
-🌙 Dark Mode
-</button>
 
 <section class="hero">
 
@@ -44,55 +40,31 @@ Welcome To Trip-In
 </div>
 
 </section>
-<section id="about">
 
-<h2>About Trip-In</h2>
+<!-- PLANNER SECTION -->
 
-<div class="about-container">
+<section id="planner" class="hidden">
+
+<div class="planner-container">
+
+<h2>
+Plan Your Hyderabad Trip
+</h2>
 
 <p>
-
-Trip-In is a Hyderabad tourism planner designed
-for first-time visitors.
-
-Instead of spending hours searching for places,
-hotels and food, visitors can simply choose their
-budget and duration and instantly receive a
-personalized Hyderabad travel itinerary.
-
+Choose your stay duration and budget.
 </p>
 
-</div>
+<div class="form-group">
 
-</section>
-<!-- PLANNER SECTION -->
-<div id="costEstimate">
-
-Estimated Trip Cost:
-₹0
-
-</div>
-
-<section id="planner">
-
-<h2>Plan Your Hyderabad Journey</h2>
-
-<p class="planner-subtitle">
-Choose your duration and budget to get a personalized itinerary.
-</p>
-
-<div class="planner-card">
-
-<input
-type="text"
-placeholder="Search Hyderabad Attractions..."
-id="searchInput"
->
+<label>
+Select Duration
+</label>
 
 <select id="duration">
 
 <option value="">
-Select Trip Duration
+Choose Duration
 </option>
 
 <option value="2">
@@ -109,18 +81,20 @@ Select Trip Duration
 
 </select>
 
-<div class="budget-box">
+</div>
+
+<div class="form-group">
 
 <label>
-Budget Range
+Select Budget
 </label>
 
 <input
 type="range"
 min="2000"
 max="15000"
-value="5000"
 step="500"
+value="5000"
 id="budgetSlider"
 >
 
@@ -138,205 +112,23 @@ Generate My Plan
 
 </section>
 
-<!-- HIGHLIGHTS SECTION -->
+<!-- RESULTS -->
 
-<section class="highlights">
+<section id="resultsSection" class="hidden">
 
-<h2>Top Hyderabad Attractions</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<img src="images/hero.jpg">
-
-<h3>Charminar</h3>
-
-<p>
-Historic monument and heart of Hyderabad.
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/hero.jpg">
-
-<h3>Golconda Fort</h3>
-
-<p>
-Famous fort known for architecture and views.
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/hero.jpg">
-
-<h3>Ramoji Film City</h3>
-
-<p>
-One of the world's largest film studio complexes.
-</p>
-
-</div>
-
-<div class="card">
-
-<img src="images/hero.jpg">
-
-<h3>Hussain Sagar</h3>
-
-<p>
-Beautiful lake with Buddha statue.
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- RESULT SECTION -->
-<button
-onclick="saveFavorite('${place.name}')"
->
-
-❤️ Save
- <a
-href="https://www.google.com/maps/search/${place.name}"
-target="_blank"
->
-
-View On Maps
-
-</a>
-
-</button>
-
-<section id="resultSection">
-
-<h2>Your Personalized Plan</h2>
+<h2>
+Your Hyderabad Travel Plan
+</h2>
 
 <div id="results">
 
-<p>
-Your itinerary will appear here.
-</p>
-
-</div>
-
-</section>
-  <section id="searchResultsSection">
-
-<h2>Explore Hyderabad Attractions</h2>
-
-<div id="searchResults">
-
-<p>
-Search for an attraction above.
-</p>
-
 </div>
 
 </section>
 
-<script src="js/data.js"></script>
-<script src="js/app.js"></script>
-<section id="travelTips">
+<script src="data.js"></script>
+<script src="app.js"></script>
 
-<h2>
-Travel Tips For First-Time Visitors
-</h2>
-
-<div class="tips-container">
-
-<div class="tip">
-
-<h3>Best Season</h3>
-
-<p>
-October to February is ideal.
-</p>
-
-</div>
-
-<div class="tip">
-
-<h3>Local Food</h3>
-
-<p>
-Try Hyderabadi Biryani and Haleem.
-</p>
-
-</div>
-
-<div class="tip">
-
-<h3>Transportation</h3>
-
-<p>
-Metro and cabs are convenient.
-</p>
-
-</div>
-
-<div class="tip">
-
-<h3>Shopping</h3>
-
-<p>
-Visit Laad Bazaar for pearls and bangles.
-</p>
-
-</div>
-
-</div>
-
-</section>
-<section id="contact">
-
-<h2>Contact Us</h2>
-
-<form>
-
-<input
-type="text"
-placeholder="Your Name"
-required
->
-
-<input
-type="email"
-placeholder="Your Email"
-required
->
-
-<textarea
-placeholder="Your Message"
-rows="5"
-></textarea>
-
-<button>
-Send Message
-</button>
-
-</form>
-
-</section>
 </body>
 
 </html>
-<section id="weather">
-
-<h2>
-Hyderabad Weather
-</h2>
-
-<p>
-Best travel season:
-October to February
-</p>
-
-</section>
