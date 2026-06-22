@@ -586,3 +586,122 @@ ${placeInfo.duration}
 });
 
 }
+const searchInput =
+document.getElementById("searchInput");
+
+const searchResults =
+document.getElementById("searchResults");
+searchInput.addEventListener(
+"input",
+searchPlace
+);
+function searchPlace(){
+
+const searchTerm =
+searchInput.value
+.toLowerCase()
+.trim();
+
+if(searchTerm === ""){
+
+searchResults.innerHTML = `
+
+<p>
+Search for attractions like
+Charminar,
+Golconda Fort,
+Ramoji Film City.
+</p>
+
+`;
+
+return;
+
+}
+
+const filteredPlaces =
+places.filter(place =>
+
+place.name
+.toLowerCase()
+.includes(searchTerm)
+
+);
+
+displaySearchResults(
+filteredPlaces
+);
+
+}
+function displaySearchResults(
+filteredPlaces
+){
+
+searchResults.innerHTML = "";
+
+if(filteredPlaces.length === 0){
+
+searchResults.innerHTML = `
+
+<h3>
+No attraction found.
+</h3>
+
+`;
+
+return;
+
+}
+
+filteredPlaces.forEach(place=>{
+
+searchResults.innerHTML += `
+
+<div class="place-card">
+
+<img
+src="${place.image}"
+alt="${place.name}"
+>
+
+<h2>
+${place.name}
+</h2>
+
+<p>
+🕒 Best Time:
+${place.bestTime}
+</p>
+
+<p>
+🌤 Best Season:
+${place.season}
+</p>
+
+<p>
+🎫 Entry Fee:
+${place.entryFee}
+</p>
+
+<p>
+⌛ Duration:
+${place.duration}
+</p>
+
+<p>
+🍽 Nearby Food:
+${place.food}
+</p>
+
+<p>
+🏨 Nearby Hotel:
+${place.hotel}
+</p>
+
+</div>
+
+`;
+
+});
+
+}
